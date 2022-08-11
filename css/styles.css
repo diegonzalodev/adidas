@@ -1,0 +1,134 @@
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Readex Pro", sans-serif; }
+
+* {
+  box-sizing: border-box; }
+
+p {
+  margin: 0; }
+
+.header,
+.footer {
+  background-color: aquamarine; }
+
+.wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header" "main" "footer"; }
+
+.font-form, .form-control, .btn {
+  font-size: 1.4rem; }
+
+.navbar {
+  background-color: transparent !important; }
+
+.navbar {
+  width: 90% !important;
+  margin: 0 auto !important; }
+
+.navbar-brand img {
+  width: 9rem;
+  height: auto;
+  transition-duration: .5s; }
+
+.navbar-nav {
+  margin-left: auto; }
+
+.nav-link {
+  margin-right: 1.5rem;
+  color: black;
+  font-size: 1.7rem; }
+  .nav-link:focus {
+    outline: none; }
+
+.form-control {
+  color: black; }
+
+.btn {
+  color: black; }
+
+.carousel-item img {
+  object-fit: cover; }
+
+.container-selection {
+  width: 90%;
+  margin: 4rem auto; }
+
+.container-links img {
+  width: 55rem;
+  height: auto;
+  object-fit: cover;
+  transition-duration: .3s; }
+
+.container-img-gucci {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  gap: 1rem; }
+  .container-img-gucci img {
+    width: 100%;
+    height: 100%; }
+
+.container-images img {
+  width: 33.33%;
+  height: 100vh;
+  object-fit: cover; }
+
+.section-recommendation {
+  width: 90% !important;
+  margin: 3rem auto; }
+  .section-recommendation h2 {
+    margin-bottom: 2.3rem; }
+
+.recommendation {
+  transition-duration: .3s; }
+  .recommendation img {
+    width: 25rem;
+    height: 25rem;
+    object-fit: contain; }
+  .recommendation p:nth-of-type(2)::before {
+    content: "$"; }
+
+.container {
+  width: 90% !important; }
+
+.container-icons img {
+  width: 3rem;
+  height: auto; }
+
+@media (hover: hover) {
+  .navbar-brand img:hover {
+    transform: scale(1.1); }
+  .nav-link:hover {
+    color: #137febf9;
+    font-weight: 700; }
+  .btn:hover {
+    background-color: black; }
+  .container-links img:hover {
+    transform: scale(1.1); }
+  .recommendation:hover {
+    transform: scale(1.1); } }
+
+@media screen and (max-width: 1256px) {
+  .container-img-gucci {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media screen and (max-width: 991px) {
+  form * {
+    display: none !important; }
+  .carousel-item img {
+    height: 50rem !important; } }
+
+@media screen and (max-width: 610px) {
+  .container-images {
+    flex-direction: column; }
+    .container-images img {
+      width: 100%;
+      height: auto; }
+  .container-links img {
+    width: 100%; } }
