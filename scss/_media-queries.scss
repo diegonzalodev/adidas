@@ -1,0 +1,65 @@
+@media (hover: hover) {
+	.navbar-brand {
+		img {
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+	}
+	.nav-link {
+		&:hover {
+			color: $blue-color;
+			font-weight: 700;
+		}
+	}
+	.btn {
+		&:hover {
+			background-color: $black-color;
+		}
+	}
+	.container-links {
+		img {
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+	}
+	.recommendation {
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+}
+
+@media screen and (max-width: 1256px) {
+	.container-img-gucci {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (max-width: 991px) {
+	form {
+		* {
+			display: none !important;
+		}
+	}
+	.carousel-item {
+		img {
+			height: 50rem !important;
+		}
+	}
+}
+
+@media screen and (max-width: 610px) {
+	.container-images {
+		flex-direction: column;
+		img {
+			@include sizes($s-100, auto);
+		}
+	}
+	.container-links {
+		img {
+			width: $s-100;
+		}
+	}
+}

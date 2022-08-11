@@ -1,0 +1,48 @@
+.font-form {
+  font-size: 1.4rem;
+}
+
+$components: (
+	navbar: transparent,
+);
+
+@each $component, $bg-color in $components {
+	.#{$component} {
+		background-color: $bg-color !important;
+	}
+}
+
+.navbar {
+	width: $s-90 !important;
+	margin: 0 auto !important;
+}
+
+.navbar-brand {
+	img {
+		@include sizes(9rem, auto);
+		transition-duration: .5s;
+	}
+}
+
+.navbar-nav {
+	margin-left: auto;
+}
+
+.nav-link {
+	margin-right: 1.5rem;
+	color: $black-color;
+	font-size: 1.7rem;
+	&:focus {
+		outline: none;
+	}
+}
+
+.form-control {
+	@extend .font-form;
+	color: $black-color;
+}
+
+.btn {
+	@extend .font-form;
+	color: $black-color;
+}

@@ -1,0 +1,9 @@
+.container {
+	width: $s-90 !important;
+}
+
+.container-icons {
+	img {
+		@include sizes(3rem, auto);
+	}
+}

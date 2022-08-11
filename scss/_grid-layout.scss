@@ -1,0 +1,10 @@
+.wrapper {
+  width: $s-100;
+  display: grid;
+  grid-template-columns: $s-100;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 
+  "header"
+  "main"
+  "footer";
+}

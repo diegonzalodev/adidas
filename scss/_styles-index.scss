@@ -1,0 +1,28 @@
+.carousel-item {
+	img {
+		object-fit: cover;
+	}
+}
+
+.container-selection {
+	width: $s-90;
+	margin: 4rem auto;
+}
+
+.container-links {
+	img {
+		@include sizes(55rem, auto);
+		object-fit: cover;
+		transition-duration: .3s;
+	}
+}
+
+.container-img-gucci {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: auto;
+	gap: 1rem;
+	img {
+		@include sizes($s-100, $s-100);
+	}
+}
