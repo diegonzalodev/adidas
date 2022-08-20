@@ -21,6 +21,9 @@ $components: (
 	img {
 		@include sizes(9rem, auto);
 		transition-duration: .5s;
+		&:hover {
+			transform: scale(1.1);
+		}
 	}
 }
 
@@ -32,8 +35,17 @@ $components: (
 	margin-right: 1.5rem;
 	color: $black-color;
 	font-size: 1.7rem;
+	background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .4s;
 	&:focus {
 		outline: none;
+	}
+	&:hover {
+		background-size: 100% 2px;
+		font-weight: 900;
 	}
 }
 
@@ -45,4 +57,7 @@ $components: (
 .btn {
 	@extend .font-form;
 	color: $black-color;
+	&:hover {
+		background-color: $black-color;
+	}
 }

@@ -7,17 +7,32 @@
 
 .section-recommendation {
 	width: $s-90 !important;
-	margin: 3rem auto;
-	h2 {
-		margin-bottom: 2.3rem;
-	}
 }
 
 .recommendation {
-	transition-duration: .3s;
+	overflow: hidden;
+	&:hover img {
+		transform: scale(1.4);
+	}
 	img {
 		@include sizes(25rem, 25rem);
+		display: block;
 		object-fit: contain;
+		transition-duration: .3s;
+	}
+	p {
+		&:nth-of-type(2) {
+			&::before {
+				content: "$";
+			}
+		}
+	}
+}
+
+.collection {
+	img {
+		@include sizes(25rem, 25rem);
+		object-fit: cover;
 	}
 	p {
 		&:nth-of-type(2) {

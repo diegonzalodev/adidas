@@ -1,36 +1,3 @@
-@media (hover: hover) {
-	.navbar-brand {
-		img {
-			&:hover {
-				transform: scale(1.1);
-			}
-		}
-	}
-	.nav-link {
-		&:hover {
-			color: $blue-color;
-			font-weight: 700;
-		}
-	}
-	.btn {
-		&:hover {
-			background-color: $black-color;
-		}
-	}
-	.container-links {
-		img {
-			&:hover {
-				transform: scale(1.1);
-			}
-		}
-	}
-	.recommendation {
-		&:hover {
-			transform: scale(1.1);
-		}
-	}
-}
-
 @media screen and (max-width: 1256px) {
 	.container-img-gucci {
 		grid-template-columns: repeat(2, 1fr);
@@ -38,15 +5,19 @@
 }
 
 @media screen and (max-width: 991px) {
-	form {
-		* {
-			display: none !important;
-		}
-	}
 	.carousel-item {
 		img {
 			height: 50rem !important;
 		}
+	}
+	.newsletter {
+		grid-template-columns: unset;
+		grid-template-rows: 1fr auto;
+		gap: 3rem 0;
+	}
+	.newsletter-content {
+		grid-column: unset;
+		grid-row: 2 / 3;
 	}
 }
 

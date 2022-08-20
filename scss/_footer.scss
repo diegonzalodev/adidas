@@ -5,5 +5,9 @@
 .container-icons {
 	img {
 		@include sizes(3rem, auto);
+		transition-duration: .2s;
+		&:hover {
+			transform: scale(0.9);
+		}
 	}
 }

@@ -35,6 +35,8 @@ p {
   width: 9rem;
   height: auto;
   transition-duration: .5s; }
+  .navbar-brand img:hover {
+    transform: scale(1.1); }
 
 .navbar-nav {
   margin-left: auto; }
@@ -42,28 +44,50 @@ p {
 .nav-link {
   margin-right: 1.5rem;
   color: black;
-  font-size: 1.7rem; }
+  font-size: 1.7rem;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .4s; }
   .nav-link:focus {
     outline: none; }
+  .nav-link:hover {
+    background-size: 100% 2px;
+    font-weight: 900; }
 
 .form-control {
   color: black; }
 
 .btn {
   color: black; }
+  .btn:hover {
+    background-color: black; }
 
 .carousel-item img {
   object-fit: cover; }
 
 .container-selection {
   width: 90%;
-  margin: 4rem auto; }
+  max-width: 120rem !important; }
 
 .container-links img {
   width: 55rem;
   height: auto;
   object-fit: cover;
   transition-duration: .3s; }
+  .container-links img:hover {
+    transform: scale(1.1); }
+
+.container-links .link {
+  position: relative; }
+  .container-links .link p {
+    color: white;
+    font-size: 4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%); }
 
 .container-img-gucci {
   display: grid;
@@ -72,7 +96,19 @@ p {
   gap: 1rem; }
   .container-img-gucci img {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    object-fit: cover; }
+
+.newsletter {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 3rem; }
+
+.newsletter-image img {
+  width: 100%; }
+
+.newsletter-content {
+  grid-column: 2 / 3; }
 
 .container-images img {
   width: 33.33%;
@@ -80,49 +116,53 @@ p {
   object-fit: cover; }
 
 .section-recommendation {
-  width: 90% !important;
-  margin: 3rem auto; }
-  .section-recommendation h2 {
-    margin-bottom: 2.3rem; }
+  width: 90% !important; }
 
 .recommendation {
-  transition-duration: .3s; }
+  overflow: hidden; }
+  .recommendation:hover img {
+    transform: scale(1.4); }
   .recommendation img {
     width: 25rem;
     height: 25rem;
-    object-fit: contain; }
+    display: block;
+    object-fit: contain;
+    transition-duration: .3s; }
   .recommendation p:nth-of-type(2)::before {
     content: "$"; }
+
+.collection img {
+  width: 25rem;
+  height: 25rem;
+  object-fit: cover; }
+
+.collection p:nth-of-type(2)::before {
+  content: "$"; }
 
 .container {
   width: 90% !important; }
 
 .container-icons img {
   width: 3rem;
-  height: auto; }
-
-@media (hover: hover) {
-  .navbar-brand img:hover {
-    transform: scale(1.1); }
-  .nav-link:hover {
-    color: #137febf9;
-    font-weight: 700; }
-  .btn:hover {
-    background-color: black; }
-  .container-links img:hover {
-    transform: scale(1.1); }
-  .recommendation:hover {
-    transform: scale(1.1); } }
+  height: auto;
+  transition-duration: .2s; }
+  .container-icons img:hover {
+    transform: scale(0.9); }
 
 @media screen and (max-width: 1256px) {
   .container-img-gucci {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 991px) {
-  form * {
-    display: none !important; }
   .carousel-item img {
-    height: 50rem !important; } }
+    height: 50rem !important; }
+  .newsletter {
+    grid-template-columns: unset;
+    grid-template-rows: 1fr auto;
+    gap: 3rem 0; }
+  .newsletter-content {
+    grid-column: unset;
+    grid-row: 2 / 3; } }
 
 @media screen and (max-width: 610px) {
   .container-images {
