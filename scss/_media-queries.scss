@@ -1,6 +1,16 @@
 @media screen and (max-width: 1256px) {
-	.container-img-gucci {
-		grid-template-columns: repeat(2, 1fr);
+	.container-links {
+		img {
+			@include sizes(43rem, auto)
+		}
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.container-links {
+		img {
+			@include sizes(38rem, auto)
+		}
 	}
 }
 
@@ -8,6 +18,13 @@
 	.carousel-item {
 		img {
 			height: 50rem !important;
+		}
+	}
+	.container-links {
+		justify-content: center;
+		row-gap: 3rem;
+		img {
+			width: $s-100;
 		}
 	}
 	.newsletter {

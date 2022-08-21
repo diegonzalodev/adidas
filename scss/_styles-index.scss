@@ -10,6 +10,11 @@
 }
 
 .container-links {
+	max-width: 130rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
 	img {
 		@include sizes(55rem, auto);
 		object-fit: cover;
