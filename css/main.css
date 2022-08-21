@@ -94,23 +94,10 @@ p {
       left: 50%;
       transform: translate(-50%); }
 
-.container-img-gucci {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: auto;
-  gap: 1rem; }
-  .container-img-gucci img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
-
 .newsletter {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0 3rem; }
-
-.newsletter-image img {
-  width: 100%; }
 
 .newsletter-content {
   grid-column: 2 / 3; }
@@ -123,23 +110,25 @@ p {
 .section-recommendation {
   width: 90% !important; }
 
-.recommendation {
-  overflow: hidden; }
-  .recommendation:hover img {
-    transform: scale(1.4); }
-  .recommendation img {
-    width: 25rem;
-    height: 25rem;
-    display: block;
-    object-fit: contain;
-    transition-duration: .3s; }
-  .recommendation p:nth-of-type(2)::before {
-    content: "$"; }
+.recommendation img {
+  width: 25rem;
+  height: 25rem;
+  display: block;
+  object-fit: contain;
+  transition-duration: .3s; }
+  .recommendation img:hover {
+    transform: scale(0.9); }
+
+.recommendation p:nth-of-type(2)::before {
+  content: "$"; }
 
 .collection img {
   width: 25rem;
   height: 25rem;
-  object-fit: cover; }
+  object-fit: cover;
+  transition-duration: .3s; }
+  .collection img:hover {
+    transform: scale(0.9); }
 
 .collection p:nth-of-type(2)::before {
   content: "$"; }
