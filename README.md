@@ -1,5 +1,11 @@
-# Optimización de sitio web💻✔️
-## Cambios realizados:
+# Proyecto final - CoderHouse💻
+## Construido con:
+* HTML
+* CSS
+* Bootstrap v5.2
+* SASS
+## Optimización de sitio web✔️
+### Cambios realizados:
 * **index.html:**
   * agregué la siguiente descripción: **Tienda online de zapatillas y ropa deportiva, creadas con tecnología y diseño.**  
   * agregué las siguientes palabras clave: **"Adidas, Adidas deportes, Colecciones Adidas, Ropa para hombres, Ropa para mujeres, Ropa deportiva, Ropa para entrenar, Zapatillas, Zapatillas deportivas"**
